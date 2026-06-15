@@ -1,0 +1,32 @@
+name: release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # When release-please cuts a release, package the plugin and attach the zip.
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Package plugin zip
+        if: ${{ steps.release.outputs.release_created }}
+        run: zip -rq "design-kit-${{ steps.release.outputs.tag_name }}.zip" . -x ".git/*" ".github/*" "release-please-config.json" ".release-please-manifest.json"
+
+      - name: Attach zip to release
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload "${{ steps.release.outputs.tag_name }}" "design-kit-${{ steps.release.outputs.tag_name }}.zip"
