@@ -4,6 +4,7 @@
     ".": {
       "release-type": "simple",
       "package-name": "design-kit",
+      "include-component-in-tag": false,
       "extra-files": [
         {
           "type": "json",
