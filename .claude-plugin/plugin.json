@@ -1,7 +1,7 @@
 {
   "name": "design-kit",
   "description": "Brief and iterate on Claude design (CD): write structured, positive design briefs and copy-paste change requests, recorded per page under docs/design/.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Kyarha"
   }
