@@ -1,8 +1,8 @@
 # design-kit
 
-> A Claude Code plugin for briefing and iterating on **Claude design (CD)**. Write structured,
-> positive design briefs, turn your feedback into copy-paste change requests, and keep every
-> design decision recorded per version under `docs/design/`.
+> A Claude Code plugin for briefing and iterating on **Claude design (CD)**. Write short, positive
+> design briefs that hand the visual design to CD, turn your feedback into copy-paste change
+> requests, and keep every design decision recorded per version under `docs/design/`.
 
 design-kit gives you two skills that bracket the design loop:
 
@@ -16,18 +16,19 @@ and the full history of changes are reviewable and never lost in a chat scroll-b
 
 ## The core principle: positive direction only
 
-CD — like image and design models generally — follows **"do X"** far better than **"don't do Y."**
-So design-kit has one hard rule: **every line says what to _create_, or what something should
-_become_ — never what to avoid.** The skills actively catch any "don't / avoid / no / not" or
-anti-example and rewrite it into its positive form ("use real colour swatches as the imagery"
-instead of "don't use stock photos").
+Claude design is the **designer** — it decides mood, colour, type, layout, and atmosphere (or asks
+you). A design-kit brief gives it only two things and then gets out of the way:
 
-It also keeps a clean division of labour:
+- **What to build** and **the real content it must contain** — the regions, the actual copy, data,
+  and inventory. Spend all your specificity here; this is what makes the output good.
+- Then it **hands the look to CD.** No palette, no hex codes, no tone adjectives, no style-rules
+  list — those just make CD rebuild a mediocre design instead of inventing a good one.
 
-- **You** specify requirements and content — the concrete stuff: sections, real copy, data, the
-  actual inventory. Specificity here is what makes the output good.
-- **CD** invents the visual design. Briefs stay specific about _what must be there_ and open about
-  _how it looks_.
+Two supporting rules keep briefs clean:
+
+- **Short.** A brief should be about as long as the content it carries, no longer.
+- **Positive.** Every line says what to _create_, never what to avoid — CD follows "do X" well and
+  "don't do Y" badly.
 
 ## Versioning, so you can always go back
 
@@ -80,32 +81,25 @@ and each HTML page. Begin each file with a version header on its first line: `<!
 for HTML files, `// design_v1.0` for the JavaScript file. Keep any existing `design_v*` folders as
 they are.
 
-A mobile-first landing page for Lanora, a small-batch hand-dyed yarn shop. Its job: greet a
-first-time visitor and lead them into the collection. Lanora sells limited seasonal colourways to
-knitters and crocheters who care about craft.
+**What to build** — A mobile landing page for Lanora, a small-batch hand-dyed yarn shop, for
+first-time visitors: greet them and lead them into the collection.
 
-Audience & tone: hobbyist makers who value craft and colour; warm, tactile, calm.
-
-Layout: a hero with the shop name, one line of positioning, and a primary call to action; a strip
-of three featured colourways with name + price; a short "how it's dyed" trust note; a footer with
-newsletter sign-up.
-
-Content:
-- Hero line: "Small-batch yarn, dyed by hand in Geneva."
+**What it must contain** — A hero (shop name, one line of positioning, a primary call to action); a
+strip of three featured colourways with name + price; a short "how it's dyed" trust note; a footer
+with newsletter sign-up. Real content:
+- Positioning line: "Small-batch yarn, dyed by hand in Geneva."
 - Featured colourways: Mistral (CHF 28), Lavande (CHF 26), Ardoise (CHF 30)
 - Trust note: "Every skein dyed in batches of twelve."
 
-Style: warm, tactile, calm — earthy palette, generous whitespace, real product photography.
+**Done when** — a first-time visitor grasps what Lanora sells in one glance, the three colourways
+are the centre of the page, prices show in Swiss francs, and it works on a phone.
 
-Rules: mobile-first; Swiss-franc prices; accessible contrast; crisp at small sizes.
-
-Done when:
-- The hero communicates what Lanora sells in one glance
-- The three colourways read as the heart of the page
-- It feels handcrafted and calm, not mass-market
-
-Show me 3 distinct directions.
+You own the visual design — mood, colour, type, layout, imagery. Show me 3 distinct directions, and
+ask me if you'd like any direction.
 ```
+
+Notice what's **not** there: no palette, no "warm/calm/tactile", no style rules. Those are CD's to
+decide. The brief is short — the content is the only thing it's specific about.
 
 **2. Paste into CD.** Copy everything from the build-and-version preamble down to (but not
 including) `## Revisions`, paste it into Claude design, and let it generate the directions —

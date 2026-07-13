@@ -53,6 +53,8 @@ Update the files in `design_v1.0/`:
 ## Gotchas
 
 - Rephrase any "don't / avoid" into the positive change, or cut it.
+- Carry only the user's own direction — don't invent colours, moods, or constraints they didn't
+  give. CD still owns anything left unspecified.
 - Name the current `design_vX.Y/` folder in every change request, so CD edits the right version's
   files and earlier versions stay recoverable.
 - A tweak stays within the same version — leave each file's version header as it is.
