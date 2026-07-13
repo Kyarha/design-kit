@@ -11,7 +11,7 @@
         "url": "https://github.com/Kyarha/design-kit.git",
         "path": "."
       },
-      "description": "Brief and iterate on Claude design (CD): structured, positive design briefs + copy-paste change requests, recorded per page under docs/design/."
+      "description": "Brief and iterate on Claude design (CD): short, positive design briefs that hand the visual design to CD, plus copy-paste change requests, each design versioned under docs/design/."
     }
   ]
 }
