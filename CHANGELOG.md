@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2](https://github.com/Kyarha/design-kit/compare/v0.3.1...v0.3.2) (2026-07-13)
+
+
+### Bug Fixes
+
+* move plugin into plugin/ subfolder so skills install ([fdbc1ba](https://github.com/Kyarha/design-kit/commit/fdbc1ba1a4744b2cbc30c755059696295a8480d2))
+* move plugin into plugin/ subfolder so skills install ([64ef0b4](https://github.com/Kyarha/design-kit/commit/64ef0b40db454ef5d0e7d56ba94351c36f6cbf00))
+
 ## [0.3.1](https://github.com/Kyarha/design-kit/compare/v0.3.0...v0.3.1) (2026-07-13)
 
 
