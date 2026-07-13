@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/Kyarha/design-kit/compare/v0.3.0...v0.3.1) (2026-07-13)
+
+
+### Bug Fixes
+
+* refresh plugin and marketplace descriptions ([8c0790b](https://github.com/Kyarha/design-kit/commit/8c0790b890b1f05ef912e5f3d46435006cb66717))
+* refresh plugin and marketplace descriptions ([e569172](https://github.com/Kyarha/design-kit/commit/e569172969100bf2a1d44c5c24b9d10a9f8a8293))
+
 ## [0.3.0](https://github.com/Kyarha/design-kit/compare/v0.2.0...v0.3.0) (2026-07-13)
 
 
