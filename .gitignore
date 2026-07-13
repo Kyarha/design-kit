@@ -1,2 +1,6 @@
 *.zip
 .DS_Store
+
+# local tooling/session artifacts
+.claude/
+.jig/

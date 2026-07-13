@@ -1,2 +1,0 @@
-{"timestamp": "2026-06-16T16:59:23.812986+00:00", "session_id": "c98a132a-bc45-4b27-8b44-ecaa075a6d3f", "event": "task_spawned", "tool_name": "Agent", "prompt_snippet": "In Claude Code, a user installed a plugin from a git-based marketplace like this:\n  /plugin marketpl"}
-{"timestamp": "2026-07-13T23:04:32.197142+00:00", "session_id": "c98a132a-bc45-4b27-8b44-ecaa075a6d3f", "event": "task_spawned", "tool_name": "Agent", "prompt_snippet": "A Claude Code plugin installed from a git-based marketplace shows \"This plugin doesn't have any skil"}
