@@ -161,11 +161,11 @@ side by side — mirroring CD's `design_v*/` folders.
 ## Repository layout
 
 ```
-.claude-plugin/plugin.json        plugin manifest (name, version, author)
-.claude-plugin/marketplace.json   one-plugin marketplace (git-subdir → this repo)
-skills/design-brief/SKILL.md      the briefing skill
-skills/design-tweaks/SKILL.md     the change-request skill
-.github/workflows/release-please.yml   automated changelog + version bump + tagged release
+.claude-plugin/marketplace.json          the marketplace (points at the plugin/ subfolder)
+plugin/.claude-plugin/plugin.json        the plugin manifest (name, version, author)
+plugin/skills/design-brief/SKILL.md      the briefing skill
+plugin/skills/design-tweaks/SKILL.md     the change-request skill
+.github/workflows/release-please.yml     automated changelog + version bump + tagged release
 ```
 
 ## Releases
